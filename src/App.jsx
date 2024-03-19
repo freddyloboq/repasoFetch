@@ -6,14 +6,14 @@ const App = () => {
   const [todos, setTodos] = useState([])
 
   useEffect(()=>{
-  const fetchData = async() => {
-    const getTodos = await fetchingTodo(
-      "https://playground.4geeks.com/apis/fake/todos/user/freddyloboq",
-      "GET"
-    );
-    setTodos(getTodos);
-  }
-  fetchData();
+    const fetchData = async() => {
+      const getTodos = await fetchingTodo(
+        "https://playground.4geeks.com/apis/fake/todos/user/freddyloboq",
+        "GET"
+      );
+      setTodos(getTodos);
+    }
+    fetchData();
   },[])
     // console.log('todos', todos)
 
